@@ -1,0 +1,7 @@
+C:\Projects\inhollandIT\Projects\linq-practices\linq-practicesVB\obj\Debug\linq-practicesVB.csprojAssemblyReference.cache
+C:\Projects\inhollandIT\Projects\linq-practices\linq-practicesVB\obj\Debug\linq-practicesVB.csproj.CoreCompileInputs.cache
+C:\Projects\inhollandIT\Projects\linq-practices\linq-practicesVB\bin\Debug\linq-practicesVB.exe.config
+C:\Projects\inhollandIT\Projects\linq-practices\linq-practicesVB\bin\Debug\linq-practicesVB.exe
+C:\Projects\inhollandIT\Projects\linq-practices\linq-practicesVB\bin\Debug\linq-practicesVB.pdb
+C:\Projects\inhollandIT\Projects\linq-practices\linq-practicesVB\obj\Debug\linq-practicesVB.exe
+C:\Projects\inhollandIT\Projects\linq-practices\linq-practicesVB\obj\Debug\linq-practicesVB.pdb
