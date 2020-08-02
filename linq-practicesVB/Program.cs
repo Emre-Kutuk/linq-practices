@@ -22,9 +22,13 @@ namespace linq_practicesVB
         }
         public static IEnumerable<int> MyFilter(IEnumerable<int> input)
         {
-            var evens = input.Where(x => x % 2 == 0);
-            var squared = evens.Select(x => x * x);
-            var result = squared.Where(x => x < 50);
+            //Alternative 1
+            //var evens = input.Where(x => x % 2 == 0);
+            //var squared = evens.Select(x => x * x);
+            //var result = squared.Where(x => x < 50);
+
+            //Alternative 2
+            var result = input.Where(x => x % 2 == 0).Select(y => y * y).Where(z => z < 50);
 
             return result;
         }
