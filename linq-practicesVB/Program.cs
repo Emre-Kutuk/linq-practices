@@ -30,6 +30,11 @@ namespace linq_practicesVB
             int[] list3 = { -3, -1, 3, 7, 1, -3, 7 };
             Console.WriteLine(LengthOfPositive(list3));
 
+            //Assignment 4
+            int polyInt = 2;
+            int[] coeffs = {3, 4, 5};
+            Console.WriteLine(Poly(polyInt, coeffs));
+
         }
         public static IEnumerable<int> MyFilter(IEnumerable<int> input)
         {
@@ -54,6 +59,11 @@ namespace linq_practicesVB
             return input.Skip(2).TakeWhile(i => i > 0).Count();
         }
 
+        public static int Poly(int x, IEnumerable<int> coeffs)
+        {
+            int degree = coeffs.Count() - 1;
+            return coeffs.Aggregate(0, (p, x1) => (p + x1 * (int)Math.Pow(x, degree--)));
+        }
 
 
 
