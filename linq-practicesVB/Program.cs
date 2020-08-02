@@ -17,8 +17,14 @@ namespace linq_practicesVB
 
         void Start()
         {
+            //Assignment 1
             IEnumerable<int> vs = Enumerable.Range(1, 10);
             Console.WriteLine(string.Join(",", MyFilter(vs)));
+
+            //Assignment 2
+            var a = Enumerable.Range(1, 5);
+            var b = Enumerable.Range(1, 10).Where(x => x % 2 != 0);
+            Console.WriteLine(string.Join(",", Merge(a,b)));
         }
         public static IEnumerable<int> MyFilter(IEnumerable<int> input)
         {
@@ -33,8 +39,13 @@ namespace linq_practicesVB
             return result;
         }
 
-        
-   
+        public static IEnumerable<int> Merge(IEnumerable<int> a, IEnumerable<int> b)
+        {
+            return a.Except(b).Union(b.Except(a));
+        }
 
-}
+
+
+
+    }
 }
